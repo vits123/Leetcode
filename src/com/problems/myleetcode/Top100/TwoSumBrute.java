@@ -23,11 +23,7 @@ public class TwoSumBrute {
 
   // we need to call the method with arguments to test the output
   public static void main(String[] args) {
-    TwoSumBrute twoSumBrute = new TwoSumBrute();
-    int[] output = twoSumBrute.twoSum(new int[]{2, 7, 11, 15}, 9);
-    if (output.length == 2) {
-      System.out.println(output[0] + " " + output[1]);
-    }
+
   }
 
 
