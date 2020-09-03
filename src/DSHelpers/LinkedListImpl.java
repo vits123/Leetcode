@@ -5,12 +5,15 @@
 
 package DSHelpers;
 
-public class LinkedListImpl {
+import java.util.LinkedList;
 
-  class Node {
+public class LinkedListImpl extends LinkedList {
+
+  // LL node structure
+  public class Node {
 
     int val;
-    Node next;
+    public Node next;
 
     public Node(int val) {
       this.val = val;
@@ -30,15 +33,15 @@ public class LinkedListImpl {
     listImpl.addNodeAtStart(50);
     listImpl.addNodeAtIndex(70, 2);
     listImpl.printLinkedList();
-    listImpl.removeNode();
-    listImpl.removeNodeAtIndex(3);
-    listImpl.removeNodeAtStart();
+    //listImpl.removeNode();
+    //listImpl.removeNodeAtIndex(3);
+    //listImpl.removeNodeAtStart();
     Boolean isFound = listImpl.search(100);
     System.out.println();
-    System.out.println("Found or Not found target element: "+isFound);
+    System.out.println("Found or Not found target element: " + isFound);
   }
 
-  private Boolean search(int target) {
+  protected Boolean search(int target) {
     Node temp = head;
     while (temp.next != null) {
       temp = temp.next;
@@ -49,11 +52,11 @@ public class LinkedListImpl {
     return false;
   }
 
-  private void removeNodeAtStart() {
+  protected void removeNodeAtStart() {
     head = head.next;
   }
 
-  private void addNodeAtIndex(int val, int index) {
+  protected void addNodeAtIndex(int val, int index) {
     Node temp = head;
     int count = 0;
     while (temp != null && ++count != index) {
@@ -66,7 +69,7 @@ public class LinkedListImpl {
   }
 
   // Adds a node at start of LL
-  private void addNodeAtStart(int val) {
+  protected Node addNodeAtStart(int val) {
     if (head == null) {
       Node temp = new Node(val);
       head = temp;
@@ -77,9 +80,10 @@ public class LinkedListImpl {
       temp.next = head;
       head = temp; // new head
     }
+    return head;
   }
 
-  private void removeNodeAtIndex(int index) {
+  protected void removeNodeAtIndex(int index) {
     Node temp = head;
     int count = 0;
     while (temp != null && ++count != index) {
@@ -90,7 +94,7 @@ public class LinkedListImpl {
   }
 
   // Remove last node and update tail
-  private void removeNode() {
+  protected void removeNode() {
     Node temp = head;
     while (temp.next != null && temp.next.next != null) {
       temp = temp.next;
@@ -99,11 +103,11 @@ public class LinkedListImpl {
     tail = temp;
   }
 
-  private void printLinkedList() {
+  protected void printLinkedList() {
     System.out.println();
     System.out.println("Printing Linked list..");
     Node temp = head;
-    while (temp != null){
+    while (temp != null) {
       System.out.print(" " + temp.val);
       temp = temp.next;
     }
@@ -111,7 +115,7 @@ public class LinkedListImpl {
 
 
   //  Adds node at the end of current list
-  private void addNode(int val) {
+  protected void addNode(int val) {
     if (head == null) {
       Node temp = new Node(val);
       head = temp;
