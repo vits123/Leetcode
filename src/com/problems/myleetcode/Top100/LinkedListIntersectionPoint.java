@@ -1,6 +1,6 @@
 package com.problems.myleetcode.Top100;
 
-import DSHelpers.LinkedListImpl;
+import data_structure.linkedlist.LinkedListImpl;
 
 
 public class LinkedListIntersectionPoint extends LinkedListImpl {

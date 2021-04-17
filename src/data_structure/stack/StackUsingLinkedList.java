@@ -1,4 +1,4 @@
-package DSHelpers.stack;
+package data_structure.stack;
 
 class StackNode {
 

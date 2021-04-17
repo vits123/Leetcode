@@ -1,4 +1,4 @@
-package DSHelpers;
+package data_structure.classes;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

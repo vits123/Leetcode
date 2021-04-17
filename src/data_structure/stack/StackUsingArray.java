@@ -1,4 +1,4 @@
-package DSHelpers.stack;
+package data_structure.stack;
 
 /*
     1. Stack is also referred as LIFO or FILO stack of objects.

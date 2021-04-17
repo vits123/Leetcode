@@ -1,4 +1,4 @@
-package DSHelpers;
+package data_structure.hashtable;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package DSHelpers;
+package data_structure.sorting;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package DSHelpers.tree;
+package data_structure.tree;
 
 /*
    A tree whose elements have at most 2 children is called Binary tree. If tree is empty then value of root is NULL.

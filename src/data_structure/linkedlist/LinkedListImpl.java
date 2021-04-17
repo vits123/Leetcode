@@ -3,7 +3,7 @@
  */
 
 
-package DSHelpers;
+package data_structure.linkedlist;
 
 import java.util.LinkedList;
 

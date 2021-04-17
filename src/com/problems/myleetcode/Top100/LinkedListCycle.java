@@ -9,7 +9,7 @@
 
 package com.problems.myleetcode.Top100;
 
-import DSHelpers.LinkedListImpl;
+import data_structure.linkedlist.LinkedListImpl;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
